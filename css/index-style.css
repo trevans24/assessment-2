@@ -6,7 +6,7 @@ html {
 }
 
 /*Navigation Bar*/
-nav {
+.navigation {
 	display: inline-block;
 	cursor: pointer;
 	color: white;
@@ -14,16 +14,16 @@ nav {
 	font-weight: 300;
 }
 
-div {
+.nav-list {
 	width: 35px;
 	height: 5px;
 	background-color: #090019;
 	margin: 6px 0;
-	transition: 0.4s;
+	transition: 0.5s;
 }
 
 .change .bar1 {
-	transform: rotate(-45deg) translate(-9px, 6px);
+	transform: rotate(-405deg) translate(-10px, 4px);
 }
 
 .change .bar2 {
@@ -31,7 +31,7 @@ div {
 }
 
 .change .bar3 {
-	transform: rotate(45deg) translate(-8px, 8px);
+	transform: rotate(405deg) translate(-10px, -4px);
 }
 /*Floating center Div*/
 .description {
