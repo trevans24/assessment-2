@@ -1,3 +1,11 @@
+/*background image*/
+
+html {
+	background-image: url(../images/affinity-designer.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	}
+
 /*Navigation Bar*/
 .navigation {
 	float: right;
