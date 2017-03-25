@@ -40,3 +40,21 @@ html {
 a{
 	display: none;
 }
+
+/*Game Board Styling*/
+.game-board {
+	background: url("../images/game-board-image.gif");
+	background-size: cover;
+	background-repeat: no-repeat;
+	clear: both;
+	height: 600px;
+	width: 1100px;
+	background-color: rgba(58,88,167,.6);
+	margin: 0 auto;
+	position: relative;
+}
+
+.playerOne {
+	padding-top: 250px; 
+}
+

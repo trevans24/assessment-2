@@ -9,11 +9,16 @@ html {
 /*Navigation Bar*/
 .navigation {
 	float: right;
+	/*width: 35px;
+	height: 50px;
+*/	padding-right: 20px;
+	margin: 6px 0;
+	/*background-color: #04C5DA;*/
+}
+
+.navigation:hover {
+	float: right;
 	display: inline-block;
-	cursor: pointer;
-	color: white;
-	font-family: 'Open Sans';
-	font-weight: 300;
 	padding-right: 20px;
 }
 
@@ -22,7 +27,7 @@ html {
 	height: 5px;
 	background-color: #04C5DA;
 	margin: 6px 0;
-	transition: 0.5s;
+	transition: 0.8s;
 }
 
 .change .bar1 {
@@ -37,7 +42,7 @@ html {
 	transform: rotate(405deg) translate(-10px, -4px);
 }
 
-a{
+.nav-list a {
 	display: none;
 }
 /*Floating center Div*/
@@ -80,21 +85,33 @@ h2 {
 
 .play-div {
 	background-color: white;
-	height: 80px;
+	height: 100px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
 	padding: 7px 18px;
 }
 
-button {
+.play {
+	margin: 0 auto;
 	height: 50px;
 	width: 208px;
 	border-radius: 10px;
 	background-color: #281C46;
-	font-size: 20px;
+	font-size: 24px;
 	opacity: .8;
-	color: #27E8B5;
 	margin-top: 15px;
+	padding-top: 20px;
+}
+
+.play:hover {
+	background-color: #3A58A7;
+	opacity: .6;
+}
+
+a {
+	text-decoration: none;
+	color: #27E8B5;
+	cursor: default;
 }
 
 /*Floating Div animation*/
