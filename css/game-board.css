@@ -6,6 +6,12 @@ html {
 	background-repeat: no-repeat;
 	}
 
+/*Body*/
+body {
+	width: 1100px;
+	height: 800px;
+	margin: 0 auto;
+}
 /*Navigation Bar*/
 .navigation {
 	float: right;
@@ -43,26 +49,37 @@ a{
 }
 
 /*Game Board Styling*/
-.game-board {
+#game-board {
 	background: url("../images/game-board-image.gif");
 	background-size: cover;
 	background-repeat: no-repeat;
 	clear: both;
 	height: 600px;
-	width: 1100px;
+	width: 1000px;
 	background-color: rgba(58,88,167,.6);
+	
+}
+
+/*Reset Button*/
+.reset {
 	margin: 0 auto;
-	position: relative;
+	border-radius: 20px;
+	background-color: #2F87D9;
+	height: 100px;
+	width: 250px;
+	font-size: 60px;
+	margin-top: 40px;
+	margin-left: 375px;
+	color: #04C5DA;
 }
 
 /*player divs*/
 .playerOne {
-	padding-top: 250px; 
 	position: absolute;
-	left: 0;
+	padding-top: 125px;
 }
 
 .playerTwo {
 	position: absolute;
-	left: 0;
+	padding-top: 300px;
 }
