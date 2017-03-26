@@ -8,12 +8,45 @@ $(document).ready(function(){
 
 console.log("up and running!");
 
-$('.move').click(function(){
-	$('playerOne').animate({
-	marginLeft: "+=50",
-});
-});
+window.addEventListener("keydown", movePlayer, false);
+// window.addEventListener("keypress", movePlayer, false);
+// window.addEventListener("keyup", movePlayer, false);
 
+var playerOne = $('.playerOne').position().left,
+	playerTwo = $('.playerTwo').position().left;
+
+//moving the player per the distance determined
+function movePlayer(e){
+	switch(e.keyCode) {
+		case 65:
+			console.log('a');
+			$('.playerOne').animate({left: "+=50px"});
+			console.log(playerOne);
+			playerOne = $('.playerOne').position().left;
+			console.log(playerOne);
+			checkWin();
+			break;
+		case 76:
+			console.log('l');
+			$('.playerTwo').animate({left: "+=50px"});
+			console.log(playerTwo);
+			playerTwo = $('.playerTwo').position().left;
+			console.log(playerTwo);
+			checkWin();
+
+			break;
+	}
+}
+
+
+//check for win
+function checkWin(){
+	if (playerOne >= 831){
+		alert('God save the Queen');
+	} else if (playerTwo >= 831){
+		alert('Yohoho and a bottle of Rum');
+	}
+}
 
 
 
@@ -27,23 +60,6 @@ $('.move').click(function(){
 // 	return Math.floor(Math.Random()*(max - min)) + min;
 	
 // }
-
-//moving the player per the distance determined
-// function movePlayer(e){
-// 	console.log("3");
-// 	if (e.keycode == 65){
-// 		moveRight += distance(2,15);
-// 		playerOne.style.left = left + "px";
-// 		console.log("4");
-// 	} if (e.keycode === 76){
-// 		moveRight += distance(2,15);
-// 		playerTwo.style.left = left + "px";
-// 		console.log("5");
-// 	}
-// 	console.log("6");
-// }
-
-//finish line
 
 
 //reset game
