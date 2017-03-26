@@ -1,9 +1,3 @@
-// menu click animation
-
-var myFunction = function(x){
-	x.classList.toggle('change');
-};
-
 $(document).ready(function(){
 
 console.log("up and running!");
@@ -48,9 +42,15 @@ function checkWin(){
 	}
 }
 
+//reset game
+$('.reset').click(function(){
+		location.reload();
+	});
 
 
 });
+
+
 //distance to move player per key press
 // function distance(min,max){
 // 	console.log("1");
@@ -60,7 +60,4 @@ function checkWin(){
 // 	return Math.floor(Math.Random()*(max - min)) + min;
 	
 // }
-
-
-//reset game
 

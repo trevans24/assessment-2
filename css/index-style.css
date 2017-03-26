@@ -1,19 +1,17 @@
 /*background image*/
 
-html {
+body {
 	background-image: url(../images/affinity-designer.png);
 	background-size: cover;
+	min-height: 100%;
 	background-repeat: no-repeat;
 	}
 
 /*Navigation Bar*/
 .navigation {
 	float: right;
-	/*width: 35px;
-	height: 50px;
-*/	padding-right: 20px;
+	padding-right: 20px;
 	margin: 6px 0;
-	/*background-color: #04C5DA;*/
 }
 
 .navigation:hover {
@@ -127,4 +125,15 @@ a {
 	100% {
 		-webkit-transform: scale(1);
 	}
+}
+
+@media only screen 
+	and (min-device-width: 768px) 
+	and (max-device-width: 1020px) 
+	and (-webkit-min-device-pixel-ratio: 2) {
+		body {
+			background: url(../images/affinity-designer-tablet.png);
+			background-size: auto;
+			background-repeat: no-repeat;
+		}
 }
