@@ -25,6 +25,7 @@ html {
 	transition: 0.5s;
 }
 
+/*navigation bars animation change*/
 .change .bar1 {
 	transform: rotate(-405deg) translate(-12px, 6px);
 }
@@ -54,7 +55,14 @@ a{
 	position: relative;
 }
 
+/*player divs*/
 .playerOne {
 	padding-top: 250px; 
+	position: absolute;
+	left: 0;
 }
 
+.playerTwo {
+	position: absolute;
+	left: 0;
+}
