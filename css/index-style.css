@@ -130,13 +130,12 @@ a {
 /*Media Queries*/
 /*tablets*/
 @media only screen 
-	and (min-device-width: 766px) 
+	and (min-device-width: 769px) 
 	and (max-device-width: 1024px) 
 	and (-webkit-min-device-pixel-ratio: 2) {
 		body {
 		background-image: url(../images/affinity-designer-tablet.png);
-		width: 100%;
-		height: 100%;
+		background-size: 100% 150%;
 		}
 
 		.description {
@@ -150,19 +149,74 @@ a {
 		}
 }
 
-/*phones*/
+/*tablets portrait*/
 
 @media only screen  
-  and (max-device-width: 765px)
-  and (-webkit-min-device-pixel-ratio: 2) {
+	and (max-device-width: 768px)
+  	and (-webkit-min-device-pixel-ratio: 2) {
 		body {
-		background-image: url(../images/affinity-designer-phone.png);
-		width: 100%;
-		height: 100%;
+			background-image: url(../images/affinity-designer-phone1.png);
+			background-size: 100% 150%;
 		}
 
 		.description {
-			max-width: 350px;
+			padding-top: 450px;
+		}
+
+		.nav-list {
+			background-color: white;
+			zoom: 200%;
+		}
+
+  }
+
+/*phones landscape*/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape){
+		body {
+			background-image: url(../images/affinity-designer-phone2.png);
+			height: 500px;
+		}
+
+		.description {
+			max-height: 300px;
+			margin: 0 auto;
+			padding-top: 40px;
+		}
+
+		.nav-list {
+			background-color: white;
+			
+		}
+
+  }
+
+  /*phones portrait*/
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 736px) 
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+		body {
+			background-image: url(../images/affinity-designer-phone2.png);
+			height: 1300px;
+		}
+
+		.description {
+			max-height: 400px;
+			margin: 0 auto;
+			
+			zoom: 100%;
+		}
+
+		.nav-list {
+			background-color: white;
+			
 		}
 
   }
