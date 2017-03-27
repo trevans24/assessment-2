@@ -36,9 +36,9 @@ function movePlayer(e){
 //check for win
 function checkWin(){
 	if (playerOne >= 831){
-		alert('God save the Queen');
+		alert('God save the Queen! Player One Wins!');
 	} else if (playerTwo >= 831){
-		alert('Yohoho and a bottle of Rum');
+		alert('Yohoho and a bottle of Rum! Player Two Wins!');
 	}
 }
 
